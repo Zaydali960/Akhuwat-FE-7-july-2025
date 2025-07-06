@@ -55,7 +55,7 @@ const AllUser = () => {
     if (!id || !loanStatus) return;
 
     try {
-      const response = await fetch(`https://pervaiz-2nd-backend-2.vercel.app/api/user/update-loan-status/${id}`, {
+      const response = await fetch(`http://localhost:5000/api/user/update-loan-status/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
